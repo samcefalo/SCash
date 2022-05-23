@@ -11,7 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class SCash extends JavaPlugin {
 
     @Getter
-    public SqlManager sqlManager;
+    private SqlManager sqlManager;
 
     @Override
     public void onEnable() {

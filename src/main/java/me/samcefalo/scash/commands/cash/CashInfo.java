@@ -15,7 +15,7 @@ public class CashInfo implements CommandHandler {
 
     public CashInfo(SCash plugin) {
         this.plugin = plugin;
-        this.playerCashService = plugin.sqlManager.getPlayerCashService();
+        this.playerCashService = plugin.getSqlManager().getPlayerCashService();
         register();
     }
 

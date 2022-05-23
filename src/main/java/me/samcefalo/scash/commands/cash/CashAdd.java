@@ -17,7 +17,7 @@ public class CashAdd implements CommandHandler {
 
     public CashAdd(SCash plugin) {
         this.plugin = plugin;
-        this.playerCashService = plugin.sqlManager.getPlayerCashService();
+        this.playerCashService = plugin.getSqlManager().getPlayerCashService();
         register();
     }
 
