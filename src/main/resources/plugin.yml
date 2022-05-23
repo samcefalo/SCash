@@ -1,0 +1,12 @@
+name: SCash
+version: '${project.version}'
+main: me.samcefalo.scash.SCash
+api-version: 1.16
+authors: [ samcefalo ]
+depend:
+  - helper
+  - sql-provider-hikari
+loadbefore:
+  - helper
+  - sql-provider-hikari
+description: Cash plugin
