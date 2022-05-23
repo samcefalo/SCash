@@ -7,7 +7,6 @@ import lombok.Getter;
 import me.samcefalo.scash.models.PlayerCash;
 
 import java.util.UUID;
-import java.util.concurrent.ExecutionException;
 
 public class PlayerCashRepository implements Repository<PlayerCash, String> {
 
@@ -19,7 +18,7 @@ public class PlayerCashRepository implements Repository<PlayerCash, String> {
     }
 
     @Override
-    public PlayerCash get(String id) {
+    public PlayerCash get(String id) throws NullPointerException {
         return database.buildSync(PlayerCash.class, new Query()
                 .selectAll()
                 .from("player_cash")
